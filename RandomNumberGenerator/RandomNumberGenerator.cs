@@ -11,7 +11,7 @@ namespace RandomNumberGenerator
         private readonly int _increment;
         private readonly int _modulus;
 
-        // constructor to initialize the private members :
+        // constructor to initialize the private members
         public RandomNumberGenerator(int seed , int multiplier, int increment, int modulus)
         {
             _seed = seed;
