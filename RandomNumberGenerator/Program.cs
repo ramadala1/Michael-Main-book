@@ -41,19 +41,12 @@ namespace RandomNumberGenerator
             Console.ReadLine();
             // Test 2 
 
-            // hash set ensure uniqueness of elements in the collection , 
-            // hence we can generate 729 diff random numbers .
-            HashSet<int> randomNumbers = new HashSet<int>();
-
             // just resetting the seed value .
             _generate.ChangeSeed(1);
             for (int i = 1; i <= 729; i++)
             {
                 // invoke Generate Random Number Method , that would return a Random Number
                 int rndNumber = _generate.GenerateRandomNumber();
-
-                // add the number to collectin 
-                randomNumbers.Add(rndNumber);
 
                 // change the seed value 
                 _generate.ChangeSeed(rndNumber);
